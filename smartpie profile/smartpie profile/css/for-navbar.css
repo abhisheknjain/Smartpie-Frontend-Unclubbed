@@ -1,0 +1,106 @@
+/* Smartpie for profile css */
+
+.inside-navbar{
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 0.25%;
+	margin-bottom: 0.25%;
+}
+
+.sp-logo{
+	float: left;
+}
+
+.userdetail{
+	float: left;
+}
+
+.username-nav{
+	 font-family: 'Open Sans', sans-serif;
+	 font-size: 25px;
+	 float: left;
+}
+
+.desg-nav{
+	 font-family: 'Open Sans', sans-serif;
+	 font-size: 15px;
+	 float: left;
+	 clear: both;
+	 margin-top: -5px;
+}
+
+.userimg-and-dropdown{
+	float: right;
+}
+
+.userimg{
+	float: right;
+}
+
+.notification-bar{
+
+	padding: 5px;
+	height: auto;
+	width: auto;
+}
+
+.noti-icon{
+	font-size: 1.7em;
+	padding: 5px;
+	color: #5B9BD5;
+	float: right;
+	display: block;
+	height: auto;
+	width: auto;
+}
+
+.glyphicon-bell:hover{
+	font-size: 1.8em;
+}
+
+.glyphicon-book:hover{
+	font-size: 1.8em;
+}
+
+.glyphicon-envelope:hover{
+	font-size: 1.8em;	
+}
+
+.noti-dropdown{
+	float: right;
+}
+
+.circle-text {
+    width:15px;
+	float: right;
+	position: relative;
+	right: 15px;
+	z-index: 2000;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #ED0909; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+    border-color: #ED0909;
+}
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+    font-size: 60%;
+}
+
+.noti-container{
+	color: #ff0000;
+}
+

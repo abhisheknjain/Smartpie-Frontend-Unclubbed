@@ -1,0 +1,114 @@
+.posts-container{
+	float: left;
+	height:auto;
+	width: auto;
+	margin-right: 25%;
+	padding: 10px;
+	margin-left: 25%;
+	margin-top: 35px;
+	clear: both;
+	position: absolute;
+}
+
+.post{
+	height: 350px;
+	width: 550px;
+	background-color: blue;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	background-color: #E1E3E3;
+	border:1px solid #ABABAB;
+	margin-top: 25px;
+}
+
+.post-head{
+	height: 50px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius: 10px 10px 0px 0px;
+	border:1px solid #ABABAB;
+	margin: -1px;
+	padding: 5px;
+}
+
+.post-img{
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	border:0px solid #000000;
+	float: left;
+}
+
+.postedby-name{
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 200;
+	font-size:18px;
+	margin-left: 5px;
+	float: left;
+}
+
+.postedby-role{
+	 font-family: 'Open Sans', sans-serif;
+	 font-size: 12px;
+	 margin-left: 45px;
+	 margin-top: -20px;
+	 float: left;
+	 clear: both;
+}
+
+.post-type{
+	float: right;
+	margin-top: -35px;
+	margin-right: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.post-time{
+	float: right;
+	margin-top: -20px;
+	margin-right: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+.post-content{
+	height: 260px;
+	width: 550px;
+	padding: 5px;
+}
+
+.post-foot{
+	height: 35px;
+	-webkit-border-radius: 1px 0px 10px 10px;
+	border-radius: 0px 0px 10px 10px;
+	border:1px solid #ABABAB;
+	margin: -1px;
+	margin-top: 6px;
+	padding: 5px;
+}
+
+.post-priority{
+	float: left;
+	border-style: double;
+    border-width: 4px;
+    border-color: red;
+	height: 25px;
+	width: 25px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+
+}
+
+.social-prop{
+	float: right;
+	margin-right: 15px;
+	margin-left: 2px;
+}
+
+.gly-prop{
+	font-size: 1.5em;
+
+}
+
+.gly-val{
+	margin-left: 0px;
+}

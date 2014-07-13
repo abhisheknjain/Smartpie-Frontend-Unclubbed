@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Smartpie | Your profile</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	  <link href="css/for-navbar.css" rel="stylesheet">
+    <link href="css/for-profile.css" rel="stylesheet">
+    <link href="css/for-posts.css" rel="stylesheet">
+
+    <!-- Other includes -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Jquery -->
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	  <script type="text/javascript" src="js/for-profile.js"></script>
+    <!-- For sticky side bar -->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var s = $("#info-profile");
+        var pos = s.position();                    
+        $(window).scroll(function() {
+            var windowpos = $(window).scrollTop();
+            if (windowpos >= pos.top) {
+                s.addClass("stick");
+            } else {
+                s.removeClass("stick"); 
+            }
+        });
+    });
+    </script>
+
+    <!-- For scroll up -->
+    <script type='text/javascript'>
+    $(function() {
+        $.fn.scrollToTop = function() {
+        $(this).hide().removeAttr("href");
+        if ($(window).scrollTop() != "0") {
+            $(this).fadeIn("slow")
+        }
+        var scrollDiv = $(this);
+        $(window).scroll(function() {
+            if ($(window).scrollTop() == "0") {
+            $(scrollDiv).fadeOut("slow")
+            } else {
+            $(scrollDiv).fadeIn("slow")
+            }
+        });
+        $(this).click(function() {
+            $("html, body").animate({
+            scrollTop: 0
+            }, "slow")
+        })
+        }
+    });   
+
+    $(function() {
+    $("#w2b-StoTop").scrollToTop();
+    });
+    </script>
+
+   
+  </head>
+  <a href='#' id='w2b-StoTop' style='display:none;'>Top&nbsp;<span class="glyphicon glyphicon-chevron-up"></span></a>
+  <style>
+	a {
+	  		color: #000000;
+	  		text-decoration: none;
+		}
+	a:hover,
+	a:focus {
+  	color: #000000;
+  	text-decoration: underline;
+  }
+  </style>
+
+  <body>
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="inside-navbar">
+			<span class="sp-logo">
+				<img src="assets/smartpielogo.png" height="50" width="50">
+			</span>
+			<div class="userdetail">
+				<span class="username-nav">
+					<a href=#>Abhishek Jain</a>
+				</span>
+				<span class="desg-nav">
+					Student
+				</span>
+			</div>
+
+			<div class="userimg-and-dropdown">
+				<span class="userimg dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="assets/jain.jpg" height="50" width="50"><span class="caret"></span></a>
+              		<ul class="dropdown-menu" role="menu">
+                		<li><a href="#">My Profile</a></li>
+                		<li><a href="#">My School</a></li>
+                		<li><a href="#">My Books</a></li>
+                		<li><a href="#">People</a></li>
+                		<li class="divider"></li>
+                		<li><a href="#">Logout</a></li>
+              		</ul>
+				</span>
+			</div>
+
+			<div class="notification-bar ">
+				
+				<div class="noti-dropdown">
+					<span class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<div class="circle-text "><div>1000</div> </div>
+							<span class="glyphicon glyphicon-envelope noti-icon">
+							</span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+    	    		<li class="noti-container"><a href="#">My Profile</a></li>
+        			<li><a href="#">My School</a></li>
+        			<li><a href="#">My Books</a></li>
+        			<li><a href="#">People</a></li>
+        			<li class="divider"></li>
+        			<li><a href="#">Logout</a></li>
+            </ul>
+          </span>
+        </div>
+              
+        	<div class="noti-dropdown">
+  					<span class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  							<div class="circle-text"><div>1000</div> </div>
+  							<span class="glyphicon glyphicon-book noti-icon">
+  							</span>
+  						</a>
+  						<ul class="dropdown-menu" role="menu">
+                  			<li><a href="#">My Profile</a></li>
+                  			<li><a href="#">My School</a></li>
+                  			<li><a href="#">My Books</a></li>
+                  			<li><a href="#">People</a></li>
+                  			<li class="divider"></li>
+                  			<li><a href="#">Logout</a></li>
+                			</ul>
+              </span>
+        	</div>
+              
+          <div class="noti-dropdown">
+  					<span class="dropdown">
+  						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+  						<div class="circle-text"><div>1000</div> </div>
+  						<span class="glyphicon glyphicon-bell noti-icon">
+  					  </span>
+  						</a>
+  						<ul class="dropdown-menu" role="menu">
+                  			<li><a href="#">My Profile</a></li>
+                  			<li><a href="#">My School</a></li>
+                  			<li><a href="#">My Books</a></li>
+                  			<li><a href="#">People</a></li>
+                  			<li class="divider"></li>
+                  			<li><a href="#">Logout</a></li>
+  		              	</ul>
+          	</span>
+          </div>
+			</div>
+    	</div>  
+    </div>
+
+    <div class="container homepage-container">
+      <div id="profile-header">
+        <div class="profile-titlebar">
+        </div>
+        <div>
+          <img src="http://placeimg.com/150/150/people/sepia" class="profileimg-pos">
+          <p class="profile-name">Your Name</p>
+          <p class="school-name glyphicon glyphicon-home"> School name </p>
+        </div>
+      </div>
+      
+      <div class="status">
+        <span class="status-head">
+          Status
+        </span>
+        <span ondblclick="statusedit()" id="status-viewonly">
+          This is my status, my thougth or just my feeling
+        </span>
+        <span id="status-edit">
+          <form role="form" class="form-inline">
+            <div class="form-group">
+              <textarea class="form-control status-textarea" rows="1" cols="100" maxlength="160"></textarea>
+            </div>
+            <div class="form-group">
+              <button onclick="statusupdate()" class="btn btn-primary">Update</button>
+            </div>
+          </form>
+        </span>
+      </div>
+      
+      
+      <div id="info-profile">
+        <div class="profile-info-about">
+          <span class="profile-info-about-head">
+            <span>
+              About
+            </span>
+            <span class="glyphicon glyphicon-pencil edit-info" >
+            </span>
+          </span>
+          <p>
+            kjsdlfkjsdljsdlksdfvklmsdmvlkd
+            sdklfjsdlkfjsd
+            fsdfsdfjsd'f
+            sdfsdklfjsdf;lkjsdl;fkjksdf
+            sdsdjhflkdjfldjk
+          </p>
+        </div>
+      </div>
+
+      <div class="posts-container">
+        <div class="post">
+          <div class="post-head">
+              <img src="assets/jain.jpg" height="40" width="40" class="post-img">
+              <span class="postedby-name">Postedby Name</span>
+              <span class="postedby-role">Student</span>
+              <span class="post-type">Discussion</span>
+              <span class="post-time">8 Min</span>
+          </div>
+          <div class="post-content">
+
+          </div>
+          <div class="post-foot">
+          <span class="post-priority"></span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon-star-empty gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon glyphicon-pencil gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon glyphicon-send gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-head">
+              <img src="assets/jain.jpg" height="40" width="40" class="post-img">
+              <span class="postedby-name">Postedby Name</span>
+              <span class="postedby-role">Student</span>
+              <span class="post-type">Discussion</span>
+              <span class="post-time">8 Min</span>
+          </div>
+          <div class="post-content">
+
+          </div>
+          <div class="post-foot">
+          <span class="post-priority"></span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon-star-empty gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon glyphicon-pencil gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon glyphicon-send gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-head">
+              <img src="assets/jain.jpg" height="40" width="40" class="post-img">
+              <span class="postedby-name">Postedby Name</span>
+              <span class="postedby-role">Student</span>
+              <span class="post-type">Discussion</span>
+              <span class="post-time">8 Min</span>
+          </div>
+          <div class="post-content">
+
+          </div>
+          <div class="post-foot">
+          <span class="post-priority"></span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon-star-empty gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon glyphicon-pencil gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          <span class="social-prop">
+            <span class="glyphicon glyphicon glyphicon-send gly-prop"></span>
+            <span class="gly-val">6</span> 
+          </span>
+          </div>
+        </div>
+        
+      </div>
+
+
+    </div>
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
