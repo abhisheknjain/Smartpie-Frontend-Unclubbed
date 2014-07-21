@@ -25,6 +25,7 @@
 .forgot-password{
    margin-left: 1%;
    margin-right: 1%;
+   margin-top: 10px;
 }
 
 .logo{
@@ -33,7 +34,7 @@
 
 .img-content{
    position: absolute;
-   margin-top: 170px;
+   margin-top: 160px;
    margin-left: 45%;
    background-color:rgba(204,204,204,0.6);
    border-radius: 25px;
@@ -44,11 +45,11 @@
    border-width:1px;
 }
 
-.postslide{
+.postslide1{
   height: 500px;
+  background-image: url('../img/post_slide-1.jpg');
+  background-repeat: repeat;
   background-color: #1D5AA3;
-  background-color:rgba(29,90,163,1);  
-  padding: 40px;
   border-top: 0.2px;
   border-bottom: 0.2px;
   border-top: solid;
@@ -58,32 +59,54 @@
 
 }
  
-.inside-postslide{
-   margin: auto;
-   width: 65%;
- }
+.postslide2{
+  height: 500px;
+  background-image: url('../img/post_slide-2.jpg');
+  background-repeat: repeat;
+  background-color: #1D5AA3;
+  border-top: 0.2px;
+  border-bottom: 0.2px;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #BFBFBF;
+  
 
-.inside-postslide > div {
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: blue;
-  width: 200px;
+} 
+
+.postslide3{
+  height: 500px;
+  background-image: url('../img/post_slide-3.jpg');
+  background-repeat: repeat;
+  background-color: #1D5AA3;
+  border-top: 0.2px;
+  border-bottom: 0.2px;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #BFBFBF;
+  
+
 }
 
-.inside-postslide > div > span{
-  height: 180px;
-  width: 180px;
-  background-color: red;
-  float: left;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 100%;
+
+.postslide4{
+  height: 500px;
+  background-image: url('../img/post_slide-4.jpg');
+  background-repeat: repeat;
+  background-color: #1D5AA3;
+  border-top: 0.2px;
+  border-bottom: 0.2px;
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #BFBFBF;
+  
+
 }
 
 .smartpie-footer{
   height: 250px;
   padding: 20px;
+  background-image: url('../img/gray_jean.png');
+  background-repeat: repeat;
   background-color: #BFBFBF;
 }
 
@@ -103,7 +126,59 @@
   display: block;
   margin-top: 120px;
   width: auto;
-  margin-left: 40%;
-  margin-right: 40%;
+  margin-left: 38%;
+  margin-right: 38%;
+}
+
+.social-icons img:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 
 }
+
+.get-started{
+  font-family: 'Unkempt', cursive;
+  font-size:165%;
+  font-weight: 800;
+  color: #FFFFFF;
+  
+}
+
+.get-started:hover,
+.get-started:focus {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.inside-postslide{
+   width: 100%;
+   padding: 40px;
+   padding-left: 2.5%;
+   padding-right: 2.5%;
+
+ }
+
+.inside-postslide > div {
+  float: left;
+  width: 25%;
+  font-color: white;
+  h3{
+    font-color:#ffffff;
+  }
+}
+
+.inside-postslide > div > span{
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  float: left;
+  margin-right: 25%;
+  margin-left: 25%;
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+
+
+
